@@ -1,12 +1,12 @@
 <head>
     <meta charset="UTF-8">
-    <title>暑假倒计时</title>
+    <title>开学倒计时</title>
 </head>
 
 <body>
         <script type="text/javascript">
             function dtime(){
-            var endtime=new Date('2024-7-19 00:00:00');
+            var endtime=new Date('2024-8-31 00:00:00');
             var nowtime=new Date();
             var left=(endtime-nowtime)/1000;
             document.write(left);
@@ -14,7 +14,7 @@
             var h=parseInt(left/60/60%24);
             var m=parseInt(left/60%60);
             var s=parseInt(left%60);
-            document.body.innerHTML='<font size="5">暑假倒计时! </font>'+ d +'<font size="5">天</font>'+ h +'<font size="5">时</font>'+ m +'<font size="5">分</font>'+ s + '<font size="5">秒!</font>';
+            document.body.innerHTML='<font size="5">开学倒计时! </font>'+ d +'<font size="5">天</font>'+ h +'<font size="5">时</font>'+ m +'<font size="5">分</font>'+ s + '<font size="5">秒!</font>';
             }
                 setInterval(dtime, 1000)
         </script>
